@@ -1,9 +1,9 @@
-//bibliotecas do sistema
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <conio.h>
+#include <stdio.h> // biblioteca padrão do C (comandos como printf scanf, etc...)
+#include <string.h> // manipulação de cadeias de caracteres
+#include <stdlib.h> // alocação de memória 
+#include <conio.h> // manipular caracteres na tela
 #include <windows.h> // para adicionar caracteres especiais (UTF-8)
+#include <math.h> // instruções matemáticas
 
 int main()
 {
@@ -13,33 +13,33 @@ int main()
     SetConsoleOutputCP(CPAGE_UTF8);
 
     //variáveis globais
-    char valor[50], temp;
-    int cont, valorInicial, valorCalculado=0, menu, resultadoDiv, i, cont2, aux=0, nuInv=0;
+    char valor[50], temp=0;
+    int cont, valorInicial, valorCalculado=0, menu, resultadoDiv=0, i, cont2=0, aux=0, nuInv=0;
 
-    do // comando faz com 
+    do // enquanto o número 3 não for digitado, a operação continua
     { 
         system("cls");  //função para limpar a tela
+        printf("Digite uma das opções abaixo:\n\n");
         printf("1 - Decimal para Binário\n");
         printf("2 - Binário para Decimal\n");
         printf("3 - Sair\n");
         
         do
         {
-            scanf("%d", &menu); //recebe o valor da opção do menu
+            scanf("%d", &menu); //recebe o valor da opção do menu apenas se "menu<1||menu>3"
         }
-        while (menu<1||menu>3); // faça enquanto menu for maior que 1 OU "||" menor que 3
+        while (menu<1||menu>3);
 
-        switch(menu) // switch = escolha
+        switch(menu) // responsável pelas intruções das opções 1 e 2
         {
             case 1:
 
-                // Decimal para Binario
-
-                printf("\nInsira o número decimal a ser convertido: ");
+                // Conversão de Decimal para Binário
+                printf("\nInsira um número decimal: ");
                 scanf("%d", &valorInicial);
-                cont=0; // inicializa a variável em 0
+                cont=0;
                 i=0; 
-                while (i!=1) // != diferente de...
+                while (i!=1)
                 {
                     resultadoDiv=valorInicial/2;
                     if (resultadoDiv<2)
@@ -86,16 +86,16 @@ int main()
                     valor[cont2]=temp;
                     cont2--; //decremento
                 }                           
-                printf("\n%s", valor);
+                printf("\nNúmero binário correspondente: %s\n\n", valor);
+                printf("Pressione ENTER para voltar ao menu");
                 fflush(stdin); //função limpa o buffer de entrada "stdin"
-                getch();
+                getch(); // retorna a tecla digitada
                 break;
 
             case 2:
 
                 //Binário para Decimal
-                
-                printf("\nInsira o número binário a ser convertido: ");
+                printf("\nInsira um número binário: ");
                 scanf("%s", &valor);             
                 
                 for (cont=0; cont<strlen(valor); cont++)
@@ -107,21 +107,18 @@ int main()
                     if (valor[cont]!='1'&&valor[cont]!='0')
                     {
                         printf("\nInvalid Values!");
-                        cont=strlen(valor); //Ending the loop...
+                        cont=strlen(valor); //Termina o loop...
                     }
                 }
-                printf("%d", valorCalculado);
+                printf("Número decimal correspondente: %d\n\n", valorCalculado);
+                printf("Pressione ENTER para voltar ao menu");
                 fflush(stdin);
-                getch();
+                getch(); // retorna a tecla digitada
                 break;
 
             case 3:
                 printf("Obrigado por usar a calculadora, até a próxima.\n");
                 break; 
-                                             
-            default:
-                printf("Número inválido, escolha outro número de 1 à 3");
-                break; 
             }
-     }while (menu!=3); // fecha a função de Menu.
+    }while (menu!=3); // Finaliza a função de Menu.
 }

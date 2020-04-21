@@ -1,0 +1,22 @@
+{
+    "tasks": [
+        {
+            "label": "gcc.exe build active file",
+            "type": "shell",
+            "command": "C:\\TDM-GCC-64\\bin\\gcc.exe",
+            "args": [
+                "-std=c17",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${fileDirname}\\calculadoraConversaoBase.c",
+                "-o",
+                "${fileDirname}\\calculadoraConversaoBase.exe"
+            ],
+            "options": {
+                "cwd": "C:\\TDM-GCC-64\\bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
