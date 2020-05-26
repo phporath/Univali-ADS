@@ -1,0 +1,83 @@
+<code>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lançamento de Notas</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+<form method="post" enctype="multipart/form-data">
+  <fieldset id="notas">
+  <legend>LANÇAMENTO DE NOTAS</legend>
+
+  <table border="0">
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+        <td><label for="idDisciplina">Selecione a disciplina</label></td>
+        <td>
+        <select name="disciplina" id="idDisciplina">
+          <option value="II">Introdução a informática</option>
+          <option value="LP">Linguagens de Programação</option>
+          <option value="PC">Programação de Computadores</option>
+        </select>
+        </td>
+    </tr>
+
+    <tr><td>&nbsp;</td></tr>
+
+    <table border="0">
+        <thead>
+        <tr>
+            <th>Nome do aluno</th>
+            <th>Prova 1</th>
+            <th>Prova 2</th>
+            <th>Exame</th>
+            <th>Média</th>
+            <th>Faltas</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><label for="idAluno01"> Joana da Silva</label></td>
+            <td><input type="number" min= "0" max="10" name="prova01_aluno01" id="idAluno01" size="50" required=""></td>
+            <td><input type="number" min= "0" max="10" name="prova02_aluno01" id="idAluno01" size="50" required=""></td>
+            <td><input type="number" min= "0" max="10" name="exame_aluno01" id="idAluno01" size="50"></td>
+            <td><input type= "number" name="media_aluno01" id="idAluno01" size="50" required="" readonly=""></td>
+            <td><input type="number" min= "0" max="16" name="faltas_aluno01" id="idAluno01" size="50" required=""></td>
+        </tr>
+        <tr>
+            <td><label for="idAluno01"> Maria do Socorro</label></td>
+            <td><input type="number" min= "0" max="10" name="prova01_aluno02" id="idAluno02" size="50" required=""></td>
+            <td><input type="number" min= "0" max="10" name="prova02_aluno02" id="idAluno02" size="50" required=""></td>
+            <td><input type="number" min= "0" max="10" name="exame_aluno02" id="idAluno02" size="50"></td>
+            <td><input type="number" name="media_aluno02" id="idAluno02" size="50" required="" readonly=""></td>
+            <td><input type="number" min= "0" max="16" name="faltas_aluno02" id="idAluno02" size="50" required=""></td>
+        </tr>
+        <tr>
+            <td><label for="idAluno01"> Pedro Santos</label></td>
+            <td><input type="number" min= "0" max="10" name="prova01_aluno03" id="idAluno03" size="50" required=""></td>
+            <td><input type="number" min= "0" max="10" name="prova02_aluno03" id="idAluno03" size="50" required=""></td>
+            <td><input type="number" min= "0" max="10" name="exame_aluno03" id="idAluno03" size="50"></td>
+            <td><input type="number" name="media_aluno03" id="idAluno03" size="50" required="" readonly=""></td>
+            <td><input type="number" min= "0" max="16" name="faltas_aluno03" id="idAluno03" size="50" required=""></td>
+        </tr>
+
+        <tr><td>&nbsp;</td></tr>
+        
+        </tbody>
+    </table>
+
+    <tr>
+      <td></td>
+      <td><input type="submit" name="salvar" value="Salvar"></td>
+      <td><input type="reset" name="limpar" value="Limpar"></td>
+    </tr>
+  </table>
+  </fieldset>
+</form>
+
+</body>
+</html>
+</code>
