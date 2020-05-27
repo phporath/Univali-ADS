@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Posicionamento de elementos</title>
+<style>
+    div{border: 1px solid;}
+    a{
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #CDCDCD;
+        border-radius: 3px;
+        font-family: Arial;
+        font-weight: bold;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div style="width: 606px; height: 300px;">
+        <div style="width: 200px; height: 200px; float: right;">A</div>
+        <div style="width: 200px; height: 200px; float: left;">B</div>
+        <div style="width: 200px; height: 200px; float: left;">C</div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div style="width: 606px; height: 300px; float: left;">
+        <div style="width: 300px; height: 300px;">
+            <a href="https://github.com/phporath">github do phporath</a>
+        </div>
+        <div style="width: 300px; height: 300px; float: right;">
+            <label for="minhaSenha">Senha:</label>
+            <input name="minhaSenha" id="minhaSenha" type="password">
+        </div>
+    </div>
+
+</body>
+</html>
