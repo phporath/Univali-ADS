@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Evento de alterar background da página</title>
+        <style type="text/css">
+            .fundo{
+                background-color:#FFFFFF;
+            }
+            .fundo1{
+                background-color:#0000FF;
+            }
+        </style>
+        <script language="javascript" type="text/javascript">            
+            function azul(){
+            var obj=document.getElementById('body');
+            alert('Fundo mudará para cor azul')
+            obj.className='fundo1';
+            }
+            function branco(){
+            var obj=document.getElementById('body');
+            alert('Fundo retornará para a cor padrão')
+            obj.className='fundo'; 
+            }
+        </script>
+    </head>
+    <body id="body" class="fundo">
+        <form action="">
+            <button type="button" onclick="azul()">Fundo Azul</button>
+            <button type="button" onclick="branco()">Fundo Branco</button>
+        </form>
+    </body>
+</html>
