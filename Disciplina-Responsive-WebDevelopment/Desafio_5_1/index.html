@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Combo</title>
+        <meta charset="UTF-8"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+    </head>
+    <body>
+        <h2>Aplicação de Ajax e PHP</h2>     
+        <label for="uf">Unidade da Federação: </label>
+        <select name="uf" id="uf">
+            <option value="1">Paraná</option>
+            <option value="2">São Paulo</option>
+            <option value="3">Rio de Janeiro</option>
+            <option value="4">Minas Gerais</option>
+        </select>
+
+        <label for="cid">Cidade: </label>
+        <select name="cid" id="cid"></select>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#uf").change(function(){
+                    $.ajax({
+                        type: "POST",
+                        url: "resultado.php",
+                        data: {uf: $("#uf").val()},
+                        dataType: "json",
+                        success: function(json){
+                            var options = "";
+                            $.each(json, function(key, value){
+                                options += '<option value="' + key + '">' + value + '</option>';
+                            });
+                            $("#cid").html(options);
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
+
