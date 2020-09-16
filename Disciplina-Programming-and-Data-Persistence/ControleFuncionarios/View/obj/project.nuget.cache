@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZoTCPLkd8KICzVGXOK9yGI8J2y/IUbVF8OMucIhNbX8wX/EleOWlyXYgOoq0YM/9c505Zt6RIc2OghNYe5myaw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\phpor\\Documents\\GitHub\\Univali-ADS\\Disciplina-Programming-and-Data-Persistence\\ControleFuncionarios\\View\\View.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\phpor\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\phpor\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

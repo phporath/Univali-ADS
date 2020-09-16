@@ -1,0 +1,10 @@
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\bin\Debug\Desafio_3_2.exe.config
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\bin\Debug\Desafio_3_2.exe
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\bin\Debug\Desafio_3_2.pdb
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\obj\Debug\Desafio_3_2.csprojAssemblyReference.cache
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\obj\Debug\Desafio_3_2.Form1.resources
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\obj\Debug\Desafio_3_2.Properties.Resources.resources
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\obj\Debug\Desafio_3_2.csproj.GenerateResource.cache
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\obj\Debug\Desafio_3_2.csproj.CoreCompileInputs.cache
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\obj\Debug\Desafio_3_2.exe
+C:\Users\phpor\Documents\GitHub\Univali-ADS\Disciplina-Programming-and-Data-Persistence\Desafio_3_2\Desafio_3_2\obj\Debug\Desafio_3_2.pdb
